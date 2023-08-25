@@ -14,9 +14,15 @@ jobs:
         with:
           node-version: 18.x
 
-      - name: Setup
+      - name: list code
+        run: ls -la
+
+      - name: Setup - npm install
         run: npm ci
 
+      - name: list node_modules
+        run: ls node_modules
+        
       - name: Test
         run: |
           npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
