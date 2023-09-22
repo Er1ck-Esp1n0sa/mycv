@@ -18,8 +18,7 @@ export class HeaderComponent implements OnInit{
   contacto3 : string="gitHub";
   direccion : string="El trebol, Orizaba, Ver";
   foto : string = "https://firebasestorage.googleapis.com/v0/b/mycv-8a8b5.appspot.com/o/ErickEspinosa.jpg?alt=media&token=b96f52b3-e6b6-4851-8c37-22b5c8929919";
-  ancho: number = 100; // Cambia este valor al ancho deseado en píxeles
-  alto: number = 100;
+  redsocial: string ="TickTock";
 
   ngOnInit(): void{
     this.headerService.getHeader()
@@ -33,6 +32,7 @@ export class HeaderComponent implements OnInit{
       this.contacto2 = data.celular;
       this.contacto3 = data.redsocial;
       this.direccion = data.ubicacion;
+      this.redsocial = data.redsocial;
     });
   }     
 }
