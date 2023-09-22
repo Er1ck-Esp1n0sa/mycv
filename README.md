@@ -1,4 +1,1 @@
-# Mycv    
-
-# release
-# develop
+Mycv
