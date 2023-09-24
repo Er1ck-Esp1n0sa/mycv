@@ -1,0 +1,19 @@
+<h3>Habilidases y competencias</h3>
+<ul *ngFor = "let skills of skill_c">
+    <tr>
+        <li>
+            <tr>
+                <td>{{ skills.Nom_skill }}</td>
+            </tr>
+        </li>
+        
+        <ul *ngFor = "let des of skills.Des_skill">
+        <li>
+            <tr>
+                {{des.Descripccion}}
+                
+            </tr>
+        </li>
+    </ul>
+</tr>
+</ul>
