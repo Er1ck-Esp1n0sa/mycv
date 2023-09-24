@@ -16,7 +16,7 @@ export class CertificationsComponent implements OnInit {
     let cert1 = {
       Nom_cert : "PANDAS",
       Des_cert : [
-        {Descripccion : ""}
+        {Descripccion : "El usuario aprendio a usar la libreria de pandass de python"}
       ],
       ImagenURL: "https://firebasestorage.googleapis.com/v0/b/mycv-8a8b5.appspot.com/o/Erick%20Juarez%20Espinosa%20-%20Pandas.png?alt=media&token=908c208b-8f84-4446-a23b-bd063aa0ac30"
 };
@@ -24,7 +24,7 @@ export class CertificationsComponent implements OnInit {
     let cert2 = {
       Nom_cert : "PYTHON",
       Des_cert : [
-        {Descripccion : ""}
+        {Descripccion : "El usuario aprendio lo basico de python"}
       ],
       ImagenURL: "https://firebasestorage.googleapis.com/v0/b/mycv-8a8b5.appspot.com/o/Erick%20Juarez%20Espinosa%20-%20Python.png?alt=media&token=70ea3e17-1ce9-4f01-ac89-95b70dfc6b19"
     };
