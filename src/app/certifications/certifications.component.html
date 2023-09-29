@@ -1,0 +1,24 @@
+<h3>Certificados</h3>
+<ul>
+    <li *ngFor="let ct of certificado">
+        <table>
+            <tr>
+                <td>{{ ct.Nom_cert }}</td>
+            </tr>
+            <tr>
+                <td>
+                    <a [href]="ct.ImagenURL" target="_blank">Ver Certificado</a>
+                </td>
+            </tr>
+        </table>
+        <ul>
+            <li *ngFor="let des of ct.Des_cert">
+                <table>
+                    <tr>
+                        <td>{{ des.Descripccion }}</td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+    </li>
+</ul>
